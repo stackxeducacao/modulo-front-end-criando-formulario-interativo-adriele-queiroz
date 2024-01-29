@@ -1,0 +1,61 @@
+.formulario{
+    width: 400px;
+    padding: 30px;
+    border:1px solid #ccc;
+}
+
+.formulario p{   
+    font-size: 1.5em;
+}
+
+.field label, 
+.field span{
+    padding-left: 5px;
+    font-size: 1.1em;
+    display: block;    
+    margin: 10px 0;
+}
+.radiobox label{    
+    display: inline-block;
+    margin-right: 10px;
+}
+
+select{
+    width: 100%;
+    font-size: 1.0em;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;    
+    margin-bottom: 10px;
+}
+
+input#nao{
+    margin-left: 10px;
+}
+textarea{
+    line-height: 20px;    
+    height: 80px;
+    resize: none;
+}
+input[type=submit]{
+    display: block;
+    background-color: #ccc;
+    height: 40px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;   
+    text-align: center;
+    border-radius: 15px;
+}

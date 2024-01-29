@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário interativo</title>
+</head>
+
+<body>
+
+    <form class="formulario">
+        <!-- Introdução do formulário -->
+        <p> Envie uma mensagem preenchendo o formulário abaixo</p>
+        <!-- Seção de informações pessoais -->
+        <div class="field">
+            <!-- Campo de entrada para o nome -->
+            <label for="name">Nome:</label>
+            <input type="text" required placeholder="digite seu nome aqui*" id="name"><br>
+            <label for="email">Email:</label>
+            <!-- Campo de entrada para o email -->
+            <input type="text" required placeholder="digite seu e-mail aqui*" id="email"><br>
+            <label for="idade">Idade:</label>
+            <!-- Opções de idade usando radio buttons -->
+            <input type="radio" name="idade" value="18_22">18 a 22 <br>
+            <input type="radio" name="idade" value="23_30">23 a 30 <br>
+            <input type="radio" name="idade" value="mais31">acima de 31<br>
+            <label for="estado_civil">Estado civil:</label>
+            <select name="estado_civil" id="estado_civil">
+                <!-- Seleção do estado civil usando um dropdown -->
+                <option value=""></option>
+                <option value="Solteiro">Solteiro(a)</option>
+                <option value="Casado">Casado(a)</option>
+                <option value="Separado">Separado(a)</option>
+                <option value="Divorciado">Divorciado(a)</option>
+                <option value="Viúvo">Viúvo(a)</option>
+            </select><br><br>
+        </div>
+        <hr>
+        <!-- Seção de preferências de novidades -->
+        <div class="field radiobox">
+            <span>Deseja receber nossas novidades?</span>
+            <!-- Opções de sim ou não usando radio buttons -->
+            <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+            <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label><br>
+        </div>
+        <!-- Seção da mensagem do usuário -->
+        <div class="field">
+            <label for="mensagem">Sua mensagem:</label>
+            <!-- Área de texto para a mensagem do usuário -->
+            <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea><br><br>
+        </div>        <!-- Botão de envio do formulário -->
+        <input type="submit" name="acao" value="Enviar">
+    </form>
+</body>
+
+</html>
